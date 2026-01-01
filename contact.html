@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appointments & Contact | Dr. Kishwar Psychiatry</title>
+  <meta name="description" content="Request an appointment with Dr. Kishwar. Call, email, or submit the form. No emergency services; call 911 for crises." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="img/logo.png" alt="Dr. Kishwar Psychiatry logo" />
+      <span>Dr. Kishwar Psychiatry</span>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="conditions.html">Conditions</a>
+      <a href="contact.html" class="active">Appointments</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero">
+      <h1>Appointments & Contact</h1>
+      <p>Reach out to request a confidential appointment. This form is not for emergencies.</p>
+    </section>
+
+    <section class="grid two-col align-start" id="request">
+      <div>
+        <h2>Contact the office</h2>
+        <p><strong>Phone:</strong> <a href="tel:+16308981031">(630) 898-1031</a></p>
+        <p><strong>Location:</strong> 3845 McCoy Dr, Ste 109, Aurora, IL 60504</p>
+        <p><strong>Email:</strong> office@example.com</p>
+        <p><strong>Office hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM</p>
+        <p class="notice">If you are experiencing a medical or psychiatric emergency, call 911 or go to the nearest emergency room.</p>
+        <p class="notice">Form submissions are reviewed during business hours. Do not submit sensitive personal details; we will follow up to complete intake on a secure channel.</p>
+      </div>
+
+      <div class="panel">
+        <h2>Request appointment</h2>
+        <form class="contact-form" aria-label="Appointment request form" id="contact-form">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required aria-required="true" />
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" aria-required="false" />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required aria-required="true" />
+
+          <label for="message">Brief Message (do not include sensitive details)</label>
+          <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+
+          <button type="submit" class="btn primary" aria-label="Submit appointment request" id="contact-submit">Submit Request</button>
+          <p class="form-note">This form sends your request securely to our team via Google Apps Script. Please avoid sensitive medical or financial information; we will complete intake on a secure channel.</p>
+          <p id="contact-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <section class="footer-cta">
+    <div class="footer-cta-inner">
+      <h2>Find care that fits your needs - let's talk.</h2>
+      <p>Reach out to schedule a confidential visit or ask about treatment options.</p>
+      <div class="cta-group">
+        <a class="btn primary" href="contact.html#request">Request Appointment</a>
+        <a class="btn ghost" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="img/logo.png" alt="Dr. Kishwar Psychiatry logo" />
+          <span>Dr. Kishwar Psychiatry</span>
+        </div>
+        <p>Confidential, compassionate psychiatric care in Aurora, IL.</p>
+        <div class="footer-contact">
+          <span>3845 McCoy Dr, Suite 109, Aurora, IL 60504</span>
+          <span>(630) 898-1031</span>
+          <span>office@example.com</span>
+        </div>
+        <div class="footer-social">
+          <span>in</span><span>f</span><span>x</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Services</h3>
+        <a href="services.html">Psychiatric Evaluation</a>
+        <a href="services.html">Medication Management</a>
+        <a href="services.html">Telepsychiatry</a>
+        <a href="services.html">TMS for OCD & Depression</a>
+      </div>
+      <div class="footer-col">
+        <h3>Conditions</h3>
+        <a href="conditions.html">Depression & Mood</a>
+        <a href="conditions.html">Anxiety & PTSD</a>
+        <a href="conditions.html">OCD & ADHD</a>
+        <a href="conditions.html">Bipolar & Psychotic Disorders</a>
+      </div>
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <a href="about.html">About Dr. Kishwar</a>
+        <a href="contact.html">Appointments</a>
+        <a href="privacy.html">Privacy & Disclaimer</a>
+        <a href="contact.html#request">Call (630) 898-1031</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Not for emergencies. If you are in crisis, call 911 or go to the nearest emergency room.</span>
+      <span>?? 2025 Dr. Kishwar Psychiatry</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
